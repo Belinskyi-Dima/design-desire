@@ -1,0 +1,53 @@
+
+.recent-posts {
+	margin-bottom: 40px;
+	&__title {
+		margin-bottom: 24px;
+		color: $title-color;
+		@extend %title-font;
+		line-height: 23px;
+	}
+	&__item {
+		margin-bottom: 11px;
+	}
+	&__item-title {
+		display: block;
+		color: inherit;
+	}
+	&__date,
+	&__author {
+		color: #a1a1a1;
+		font-size: 14px;
+	}
+}
+.aside {
+	width: 350px;
+	margin-left: 30px;
+
+	&__search {
+		position: relative;
+		margin-bottom: 40px;
+	}
+	&__search-input {
+		padding: 6px 45px 6px 18px;
+		border: 1px solid rgba($title-color, .7);
+		border-radius: 20px;
+		// display: block;
+		width: 100%;
+		&::placeholder {
+			color: #A1A1A1;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 27px;
+		}
+	}
+	&__search-btn {
+		position: absolute;
+		border: none;
+		background: transparent;
+		top: 11px;
+		right: 13px;
+		cursor: pointer;
+	}
+}

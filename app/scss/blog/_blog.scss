@@ -1,0 +1,128 @@
+.blog {
+	padding: 60px 0 100px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	
+	}
+	&__category {
+		margin-bottom: 36px;
+	}
+	&__category-title,
+	&__tags-title {
+		margin-bottom: 16px;
+		color: $title-color;
+		@extend %title-font;
+		line-height: 23px;
+	}
+	&__category-item:not(:last-child) {
+		margin-bottom: 12px;
+	}
+	&__category-link {
+		color: inherit;
+	}
+	&__tags {
+		margin-bottom: 50px;
+	}
+	&__tags-link {
+		color: #8F8D8D;
+		font-weight: 400;
+		font-size: 14px;
+		padding: 0 16px;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		display: inline-block;
+		border: 1px solid rgba(#454647, .5);
+		border-radius: 14px;
+	}
+	&__social {
+		display: flex;
+	}
+	&__social-item:not(:last-child) {
+		margin-right: 20px;
+	}
+	&__items {
+		max-width: 730px;
+	}
+	&__item {
+		margin-bottom: 80px;
+	}
+	&__item-img {
+		max-width: 730px;
+	}
+	&__item-info {
+		padding: 25px 0 10px;
+		font-weight: 600;
+		font-size: 14px;
+		color: #707070;
+		a {
+			color: inherit;
+		}
+	}
+	&__item-title {
+		font-size: 24px;
+		@extend %title-font;
+		line-height: 38px;
+		color: $title-color;
+	}
+	&__blockquote{
+	background: rgba(223, 223, 223, 0.5);
+	padding: 54px 64px;
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 24px;
+	line-height: 38px;
+	color: $title-color;
+	margin-bottom: 50px;
+	}
+	&__blockquote-author {
+		font-size: 16px;
+		line-height: 22px;
+		color: $title-color;
+		@extend %title-font;
+		margin-top: 23px;
+		padding-top: 23px;
+		position: relative;
+		font-style: normal;
+		&::before {
+			@extend %line;
+			width: 200px;
+			top: 0;
+			// margin: 0 auto;
+			// text-align: center;
+			right: 0;
+		}
+	}
+	&__item-popup {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	
+
+	}
+}
+.article-popup {
+	&__box {
+		position: relative;
+	}
+}
+.article-slider {
+	&__arrow {
+		padding: 0;
+		border: none;
+		background: transparent;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-100%);
+		z-index: 10;
+		cursor: pointer;
+	}
+	&__arrowleft {
+		left: 16px;
+	}
+	&__arrowright {
+		right: 16px;
+	}
+}

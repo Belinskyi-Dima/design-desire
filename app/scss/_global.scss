@@ -1,0 +1,70 @@
+html,
+
+.header {
+	min-height: 100%;
+}
+body {
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto ;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: 400;
+	color: $default-color;
+	overflow-x: hidden;
+	// overflow-y: hidden;
+
+	min-width: 300px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	// flex: 0 0 auto;
+	flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid {
+	max-width: 1920px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.info-email {
+	position: relative;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 28px;
+	color: $title-color;
+	// color: red;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url(../images/envelope.svg);
+		height: 12px;
+		width: 16px;
+		left: 0px;
+		top: 8px;
+	}
+}
+
+
+
+
+

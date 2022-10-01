@@ -1,0 +1,143 @@
+.contact {
+	margin-bottom: 100px;
+	&__title {
+		font-size: 36px;
+		line-height: 60px;
+		color: $title-color;
+		@extend %title-font;
+		position: relative;
+		margin-bottom: 40px;
+		padding-bottom: 25px;
+		&::after {
+			@extend %line;
+			width: 200px;
+		}
+	}
+	.contact__social-wrapper {
+		padding-left: 284px;
+	}
+	&__social {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	&__social-item:not(:last-child) {
+		margin-right: 36px;
+	}
+	&__social-text {
+		color: $title-color;
+		margin-bottom: 15px;
+	}
+	&__phone {
+		color: $title-color;
+		display: inline-block;
+
+		margin-bottom: 8px;
+
+	}
+	&__city {
+		margin-bottom: 15px;
+	}
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__form-input {
+		border: none;
+		border: 1px solid #dfdfdf;
+		border-radius: 20px;
+		padding: 6px 17px;
+		margin-bottom: 13px;
+		width: 48%;
+		&::placeholder {
+			color: #A1A1A1;
+		
+		}
+	}
+	&__form-area {
+		width: 100%;
+		border-radius: 24px;
+		border: 1px solid #dfdfdf;
+		padding: 14px 17px;
+		min-height: 125px;
+		resize: none;
+		margin-bottom: 20px;
+	}
+	&__form-btn {
+		border-radius: 21px;
+		background: $title-color;
+		color: #fffff0;
+		font-weight: 600px;
+		padding: 6px 60px;
+		cursor: pointer;
+
+	}
+}
+// -----contact-slider----
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li{
+		margin: 0 15px;
+	}
+	button{
+		background-color: $title-color;
+		border: none;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		padding: 0%;
+		font-size: 0;
+	}
+}
+li.slick-active {
+	button{
+		background-color: #ffef35;
+	}
+}
+.contact-slider {
+	padding-bottom: 102px;
+	
+	&__link {
+		position: relative;
+		// width: 175px !important;
+		
+		&:hover {
+			.contact-slider__title {
+			opacity: 1;
+			transition: all .5s;
+			}
+		}
+	}
+	&__img {
+		width: 170px;
+		// width: 100%;
+		height: 170px;
+		object-fit: cover;
+
+	}
+	&__title {
+		transition: all .5s;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		line-height: 22px;
+		color: $title-color;
+		@extend %title-font;
+		text-align: center;
+		// align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(#fff, .6);
+		opacity: 0;
+		padding: 0 20px;
+	}
+}
+.slick-list  {
+	margin-bottom: 20px;
+}
+

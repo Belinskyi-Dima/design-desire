@@ -1,0 +1,110 @@
+.header {
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		height: 120px;
+		// overflow-y: hidden;
+	}
+	&__btn {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		// display: none;
+	}
+	&__btn-menu {
+		display: none;
+	}
+}
+
+.logo {
+	margin: 0 auto;
+}
+
+.menu {
+	padding: 0px 15px 0px 0px;
+
+	&__list {
+		display: flex;
+	}
+	&__list-item {
+		// padding-left: 35px;
+		padding-left: 45px;
+	}
+	&__list-link {
+		@extend %title-font;
+		color: #363838E6;
+		line-height: 22px;
+	}
+	&__list-link--active {
+		padding-bottom: 4px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			background: #000;
+			// top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			border-radius: 5px;
+			background: rgba($title-color, .7);
+		}
+	}
+
+}
+
+.breadcrumbs {
+	background: rgba(#DFDFDF, .5);
+	padding: 13px 14px;
+	position: relative;
+	z-index: 1;
+	&__list {
+		display: flex;
+		overflow-x: auto;
+	}
+	&__item {
+		position: relative;
+		padding-right: 10px;
+	}
+	&__item:not(:last-child) ::after {
+		content: "/";
+		position: absolute;
+		
+		// margin-left: -4px;
+		// margin-right: 8px;
+	}
+	&__link {
+		font-size: 14px;
+		color: $default-color;
+	}
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__list {
+		display: flex;
+	}
+	&__list-item {
+		margin: 0 6px;
+	}
+	&__arrow {
+		margin: 0 6px;
+		
+	}
+	&__arrow--disabled {
+		display: none;
+		pointer-events: none;
+	}
+	&__list-num {
+		font-weight: 600;
+		font-style: 14px;
+		color: #707070;
+	}
+	&__list-num--active {
+		color: $title-color;
+	}
+}

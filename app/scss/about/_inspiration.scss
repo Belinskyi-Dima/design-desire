@@ -1,0 +1,65 @@
+.inspiration {
+	padding-top: 100px;
+	position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background: url('../../images/about/inspiration-bg.jpg')no-repeat;
+			height: 365px;
+			z-index: -1;
+			// top: 250px;
+		}
+	&__inner {
+		display: flex;
+		// padding-top: 100px;
+		justify-content: center;
+		align-items: center;
+	}
+	&__img{
+		margin-right: 78px;
+		margin-left: -230px;
+	}
+	&__title {
+		font-size: 36px;
+		line-height: 60px;
+		color: $title-color;
+		@extend %title-font;
+		// text-align: center;
+		padding-bottom: 14px;
+		margin-bottom: 24px;
+		position: relative;
+		&::after {
+			@extend %line;
+			width: 200px;
+		}
+	}
+	&__text {
+		margin-bottom: 30px;
+
+	}
+	&__content {
+		max-width: 825px;
+	}
+	&__item {
+		color: $title-color;
+		@extend %title-font;
+		line-height: 23px;
+		margin-bottom: 33px;
+	}
+	&__item-content {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 14px;
+		border-bottom: 2px solid #fff;
+		border-radius: 4px;
+	}
+	&__line {
+		height: 2px;
+		background-color: $title-color;
+		border-radius: 4px;
+		margin-top: -2px;
+	}
+}
