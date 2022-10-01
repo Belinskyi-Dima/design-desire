@@ -1,5 +1,5 @@
 # design-desire
-used tehnology.
+used tehnology!!
 -Gulp
 -Bem
 -SASS
