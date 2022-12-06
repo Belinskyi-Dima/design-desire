@@ -9,6 +9,7 @@ $(function () {
 	});
 	$('.header__btn-menu').on('click', function () {
 		$('.menu').toggleClass('menu--open');
+		$('.header__btn-menu').toggleClass('active');
 	})
 
 	// if($(window).width() < 651) {
